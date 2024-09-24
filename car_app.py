@@ -46,7 +46,7 @@ random_data = {
 df = pd.DataFrame(random_data)
 
 # โหลดโมเดล
-model_path = r"C:\65024311\model.pkl"
+model_path = "model.pkl"
 with open(model_path, 'rb') as file:
     model = joblib.load(file)
 
