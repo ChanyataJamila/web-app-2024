@@ -89,5 +89,5 @@ st.pyplot(plt)
 
 # ข้อมูลเพิ่มเติม
 st.markdown("This application groups the prices of used cars based on vehicle type, brand, year, and price.")
-
+st.markdown("Group 0: Low Price Group 1: High Price Group 2: Medium Price")
 
