@@ -1,5 +1,5 @@
-import pickle
 import streamlit as st
+import pickle
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,8 +14,8 @@ st.set_page_config(
 )
 
 # หัวข้อหลัก
-st.title("Car Price Prediction")
-st.write("Predict the price of a used car based on various features.")
+st.title("Car Price Grouping")
+st.write("Group the prices of used cars based on various features.")
 
 # Sidebar สำหรับการป้อนข้อมูลผู้ใช้
 st.sidebar.header("User Input")
@@ -72,6 +72,7 @@ with open(model_path, 'rb') as file:  # 'rb' is used to read binary file
         st.write(f"The car is classified in group: **{prediction[0]}**")
 
 
+
 # แสดงกราฟเพื่อการมองเห็นข้อมูลที่ดีขึ้น
 st.subheader("Feature Distribution")
 
@@ -87,6 +88,6 @@ plt.xticks(rotation=45)
 st.pyplot(plt)
 
 # ข้อมูลเพิ่มเติม
-st.markdown("This application predicts the price of a used car based on its make, year, and price.")
+st.markdown("This application groups the prices of used cars based on vehicle type, brand, year, and price.")
 
 
